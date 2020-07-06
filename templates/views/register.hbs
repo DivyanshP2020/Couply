@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{
+	background: url(2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		}
+		.loginbox{
+			height: 700px;
+			width: 400px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+<div class="container">
+	<div class="loginbox">
+		<img src="./img/logo.png" class="logo">
+		<h2>REGISTER</h2>
+		<form method="POST">
+			<p>Name</p>
+		<input type="text" name="name" placeholder="Enter Name">
+		
+		<p>Gender</p>
+		<div class="custom-select">
+		<select id="gender" name="gender">
+			<option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+			<p>Email</p>
+		<input type="email" name="email" placeholder="Enter Email">
+		<p>Enter new Password</p>
+		<input type="Password" name="Password" placeholder="Enter Password">
+		<p>Confirm new Password</p>
+		<input type="Password" name="Password" placeholder="Enter Password">
+		<input type="submit" name="submit" value="Register">
+		
+		<p>Already have an account?<a href="/login">Login</a></p>
+	</form>
+	</div>
+</div>
+</body>
+</html>
